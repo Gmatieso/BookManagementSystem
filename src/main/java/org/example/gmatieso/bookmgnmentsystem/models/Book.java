@@ -21,4 +21,8 @@ public class Book {
     @ManyToMany
     @JoinTable(name = "book_category", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
     private List<Category> categories;
+
+    @OneToOne
+    @JoinColumn(name = "detail_id")
+    private BookDetail detail;
 }
