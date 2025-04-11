@@ -16,6 +16,7 @@ public class Book {
     private String title;
     @ManyToOne
     private Author author;
+
     private String description;
 
     @ManyToMany
