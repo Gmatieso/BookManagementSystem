@@ -13,3 +13,4 @@ services:
 # * docker exec -it bookmgnmentsystem-postgres-1 psql -U myuser -d mydatabase
 # ! Access PostgresSQL from Host Machine
 # * psql -h localhost -p 5432 -U myuser -d mydatabase
+# *  \dt  - run this for show the database table.
