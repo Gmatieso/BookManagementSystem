@@ -9,10 +9,12 @@ import org.example.gmatieso.bookmgnmentsystem.repository.AuthorRepository;
 import org.example.gmatieso.bookmgnmentsystem.repository.BookDetailRepository;
 import org.example.gmatieso.bookmgnmentsystem.repository.BookRepository;
 import org.example.gmatieso.bookmgnmentsystem.repository.CategoryRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 // TODO: Lets do some dependecies injection. Lets inject the repository layer into the Service class.
 public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
