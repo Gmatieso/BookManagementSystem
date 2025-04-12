@@ -11,10 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/books")
-@RequiredArgsConstructor
 public class BookController {
 
     private final BookService bookService;
+
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
 
     @PostMapping
     public Book addBookWithDetailsAndCategories(@RequestBody BookRequest request) {
