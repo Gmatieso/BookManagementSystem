@@ -21,15 +21,7 @@ public class BookController {
 
     @PostMapping
     public Book addBookWithDetailsAndCategories(@RequestBody BookRequest request) {
-        return bookService.addBookWithDetailsAndCategories(
-                request.title(),
-                request.description(),
-                request.authorId(),
-                request.isbn(),
-                request.pages(),
-                request.categoryIds()
-        );
-
+        return bookService.addBookWithDetailsAndCategories(request);
     }
 
 

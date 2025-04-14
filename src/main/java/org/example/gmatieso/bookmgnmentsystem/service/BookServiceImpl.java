@@ -1,6 +1,7 @@
 package org.example.gmatieso.bookmgnmentsystem.service;
 
 import jakarta.transaction.Transactional;
+import org.example.gmatieso.bookmgnmentsystem.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.models.Author;
 import org.example.gmatieso.bookmgnmentsystem.models.Book;
 import org.example.gmatieso.bookmgnmentsystem.models.BookDetail;
@@ -55,28 +56,28 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @Transactional
-    public Book addBookWithDetailsAndCategories(String title, String description, long authorId, String isbn, int pages, List<Long> categoryIds) {
+    public Book addBookWithDetailsAndCategories(BookRequest bookRequest) {
 
-        Optional<Author> author = Optional.ofNullable(authorRepository.findById(authorId)
-                .orElseThrow(() -> new IllegalArgumentException("Oops! Sorry Author not found:" + authorId)));
+        Optional<Author> author = Optional.ofNullable(authorRepository.findById(bookRequest.authorId())
+                .orElseThrow(() -> new IllegalArgumentException("Oops! Sorry Author not found:" + bookRequest.authorId())));
 
 
         Book book = new Book();
-        book.setTitle(title);
-        book.setDescription(description);
+        book.setTitle(bookRequest.title());
+        book.setDescription(bookRequest.description());
         book.setAuthor(author.get());
 
 
         BookDetail detail = new BookDetail();
-        detail.setIsbn(isbn);
-        detail.setPages(pages);
+        detail.setIsbn(bookRequest.isbn());
+        detail.setPages(bookRequest.pages());
         detail.setBook(book); // Link to book
 
         book.setDetail(detail); //Bidirectional
 
 
-       List<Category> categories = categoryRepository.findAllById(categoryIds);
-       if(categories.size() != categoryIds.size()){
+       List<Category> categories = categoryRepository.findAllById(bookRequest.categoryIds());
+       if(categories.size() != bookRequest.categoryIds().size()){
            throw new IllegalArgumentException("Oops Sorry! One or more categories not found:" + categories);
        }
        book.setCategories(categories);
