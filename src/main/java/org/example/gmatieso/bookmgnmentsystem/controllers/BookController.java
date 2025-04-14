@@ -1,6 +1,5 @@
 package org.example.gmatieso.bookmgnmentsystem.controllers;
 
-import lombok.RequiredArgsConstructor;
 import org.example.gmatieso.bookmgnmentsystem.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.models.Book;
 import org.example.gmatieso.bookmgnmentsystem.service.BookService;
