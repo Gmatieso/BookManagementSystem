@@ -1,6 +1,5 @@
 package org.example.gmatieso.bookmgnmentsystem.service;
 
-import lombok.RequiredArgsConstructor;
 import org.example.gmatieso.bookmgnmentsystem.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
