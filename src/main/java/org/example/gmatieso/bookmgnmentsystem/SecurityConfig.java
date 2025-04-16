@@ -32,8 +32,15 @@ public class SecurityConfig {
                 .authorizeHttpRequests(req -> req
                         .dispatcherTypeMatchers(DispatcherType.FORWARD, DispatcherType.ERROR).permitAll()
                         .requestMatchers(AUTH_WHITELIST).permitAll()
-                        .requestMatchers("/books/**", "/authors/**", "/categories/**").authenticated() // Require auth
+                        .requestMatchers("/books/**", "/authors/**", "/categories/**", "book-details/**").authenticated() // Require auth
                         .anyRequest().authenticated())
+
+                .formLogin(form -> form
+                        .loginPage("/auth/login")
+                        .loginProcessingUrl("/auth/login")
+                        .defaultSuccessUrl("/books")
+                        .permitAll())
+
                 .logout(logoutConfigurer-> logoutConfigurer
                         .logoutUrl("/auth/logout")
                         .addLogoutHandler(logoutHandler)
