@@ -1,4 +1,4 @@
-package org.example.gmatieso.bookmgnmentsystem;
+package org.example.gmatieso.bookmgnmentsystem.dtos;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
