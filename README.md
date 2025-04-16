@@ -1,3 +1,3 @@
 ## Here is the Database Design... 💹
 👷‍♂️ THIS IS WORK IN PROGRESS PROJECT  👩‍🏭
-![image](https://github.com/user-attachments/assets/ce64dd8b-ac03-4cfc-92ae-c2f21704e9a4)
+![image](https://github.com/user-attachments/assets/2fdeca0c-163b-43ca-87b2-394265371b1d)
