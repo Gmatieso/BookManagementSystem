@@ -1,4 +1,4 @@
-package org.example.gmatieso.bookmgnmentsystem;
+package org.example.gmatieso.bookmgnmentsystem.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
