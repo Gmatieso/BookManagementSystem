@@ -1,7 +1,6 @@
 package org.example.gmatieso.bookmgnmentsystem.books.service;
 
 import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookDtos;
-import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.books.model.Book;
 
 import java.util.List;

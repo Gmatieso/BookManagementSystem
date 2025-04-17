@@ -2,7 +2,6 @@ package org.example.gmatieso.bookmgnmentsystem.books.service;
 
 import jakarta.transaction.Transactional;
 import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookDtos;
-import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.author.model.Author;
 import org.example.gmatieso.bookmgnmentsystem.books.model.Book;
 import org.example.gmatieso.bookmgnmentsystem.bookDetail.model.BookDetail;

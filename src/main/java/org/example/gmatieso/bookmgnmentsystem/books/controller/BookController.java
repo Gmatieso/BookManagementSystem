@@ -2,7 +2,6 @@ package org.example.gmatieso.bookmgnmentsystem.books.controller;
 
 import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookDtos;
 import org.example.gmatieso.bookmgnmentsystem.books.service.BookService;
-import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.books.model.Book;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
