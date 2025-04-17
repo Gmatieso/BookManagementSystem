@@ -3,7 +3,7 @@ package org.example.gmatieso.bookmgnmentsystem.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.http.HttpServletResponse;
-import org.example.gmatieso.bookmgnmentsystem.dtos.ApiResponse;
+import org.example.gmatieso.bookmgnmentsystem.ApiResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
