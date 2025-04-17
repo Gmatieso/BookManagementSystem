@@ -9,7 +9,6 @@ import java.util.Optional;
 public interface BookService {
     List<Book> getAllBooks();
     Optional<Book> getBook(long id);
-    Book saveBook(Book book);
     Boolean deleteBook(long id);
     // TODO: Refactor this method to use a dto  record and a mapper class.
     Book addBookWithDetailsAndCategories(BookRequest bookRequest);

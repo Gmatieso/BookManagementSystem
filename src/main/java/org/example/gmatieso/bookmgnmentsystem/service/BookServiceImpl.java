@@ -41,11 +41,6 @@ public class BookServiceImpl implements BookService {
 
 
     @Override
-   public  Book saveBook(Book book){
-        return bookRepository.save(book);
-    }
-
-    @Override
     public Boolean deleteBook(long id) {
             if(bookRepository.existsById(id)){
                 bookRepository.deleteById(id);
