@@ -1,5 +1,6 @@
 package org.example.gmatieso.bookmgnmentsystem.books.controller;
 
+import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookDtos;
 import org.example.gmatieso.bookmgnmentsystem.books.service.BookService;
 import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.books.model.Book;
@@ -40,7 +41,7 @@ public class BookController {
      * @return the newly created book with populated details and associated categories
      */
     @PostMapping
-    public Book addBookWithDetailsAndCategories(@RequestBody BookRequest request) {
+    public Book addBookWithDetailsAndCategories(@RequestBody BookDtos request) {
         return bookService.addBookWithDetailsAndCategories(request);
     }
 

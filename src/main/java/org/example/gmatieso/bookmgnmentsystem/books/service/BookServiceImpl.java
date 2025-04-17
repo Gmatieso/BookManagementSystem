@@ -1,6 +1,7 @@
 package org.example.gmatieso.bookmgnmentsystem.books.service;
 
 import jakarta.transaction.Transactional;
+import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookDtos;
 import org.example.gmatieso.bookmgnmentsystem.books.dtos.BookRequest;
 import org.example.gmatieso.bookmgnmentsystem.author.model.Author;
 import org.example.gmatieso.bookmgnmentsystem.books.model.Book;
@@ -51,28 +52,28 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @Transactional
-    public Book addBookWithDetailsAndCategories(BookRequest bookRequest) {
+    public Book addBookWithDetailsAndCategories(BookDtos bookRequest) {
 
-        Optional<Author> author = Optional.ofNullable(authorRepository.findById(bookRequest.authorId())
-                .orElseThrow(() -> new IllegalArgumentException("Oops! Sorry Author not found:" + bookRequest.authorId())));
+        Optional<Author> author = Optional.ofNullable(authorRepository.findById(bookRequest.getAuthorId())
+                .orElseThrow(() -> new IllegalArgumentException("Oops! Sorry Author not found:" + bookRequest.getAuthorId())));
 
 
         Book book = new Book();
-        book.setTitle(bookRequest.title());
-        book.setDescription(bookRequest.description());
+        book.setTitle(bookRequest.getTitle());
+        book.setDescription(bookRequest.getDescription());
         book.setAuthor(author.get());
 
 
         BookDetail detail = new BookDetail();
-        detail.setIsbn(bookRequest.isbn());
-        detail.setPages(bookRequest.pages());
+        detail.setIsbn(bookRequest.getIsbn());
+        detail.setPages(bookRequest.getPages());
         detail.setBook(book); // Link to book
 
         book.setDetail(detail); //Bidirectional
 
 
-       List<Category> categories = categoryRepository.findAllById(bookRequest.categoryIds());
-       if(categories.size() != bookRequest.categoryIds().size()){
+       List<Category> categories = categoryRepository.findAllById(bookRequest.getCategoryIds());
+       if(categories.size() != bookRequest.getCategoryIds().size()){
            throw new IllegalArgumentException("Oops Sorry! One or more categories not found:" + categories);
        }
        book.setCategories(categories);
