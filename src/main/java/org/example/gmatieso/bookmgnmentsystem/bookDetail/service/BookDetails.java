@@ -6,6 +6,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface BookDetails {
-    public List<BookDetail> getAllBookDetails();
-    public Optional<BookDetail> getBookDetail(Long id);
+    List<BookDetail> getAllBookDetails();
+    Optional<BookDetail> getBookDetail(Long id);
 }
