@@ -2,7 +2,7 @@
 ### 👷‍♂️ WORK IN PROGRESS PROJECT  👩‍🏭
   Dictated by seniorIntern , the Tony Stark of Code, to my trusty Future me. (stand-in for JARVIS). Buckle up, this isn't your gradma's library system.
   - **If you're reading this, you're either a collaborator or a future me checking my own genius. Either way, expect updates faster than you can say "Avengers, assemble!"**
-### Welcome to the Codex, Peaple! 🚀
+### Welcome to the Codex, People! 🚀
   Listen up, because i'm only explaining this once before i go save the world or at  least the literacy world. **This is the Book Management System**, a digital masterpiece that makes libraries look like they're stuck in the Stone Age. Built with the precision of a repulsor blast, this is Java Spring Boot juggernut handles books, authors,  categories, and more with the swagger of a billionaire genius. Think of it as the Arc Reactor of bibliography--powerful, sleek, and way cooler than anything **SHIELD'S** got.
 Why'd i build this?. Because chaos in data is my villain, and i'm here to suit up and defeat it. Whether it's **tracking loans,** **managing reviews**, or ensuring no **book get lost** in the multiverse, this system's got it covered. And yeah, I'm using **Spring Boot**, **Hibernate**, and **PostgreSQL** , because i don't mess with amateur tech. Let's dive into the specs before i get distracted designing a new suit.
 
