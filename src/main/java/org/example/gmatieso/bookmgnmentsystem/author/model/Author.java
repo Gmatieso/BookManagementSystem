@@ -7,8 +7,7 @@ import org.example.gmatieso.bookmgnmentsystem.books.model.Book;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 @Entity
 public class Author {
     @Id
@@ -20,5 +19,18 @@ public class Author {
 
     @OneToMany(mappedBy = "author")
     private List<Book> books;
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBiography(String biography) {
+        this.biography = biography;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
 
 }
