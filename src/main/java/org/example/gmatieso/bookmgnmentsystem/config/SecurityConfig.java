@@ -25,8 +25,8 @@ public class SecurityConfig {
 
     private static final String[] AUTH_WHITELIST = {
             "/public/**",
-            "/auth/login", // Allow login endpoints
-            "/auth/signup" // Allow signup endpoint
+            "/auth/login/**", // Allow login endpoints
+            "/auth/signup/**" // Allow signup endpoint
     };
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
