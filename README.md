@@ -1,4 +1,6 @@
-# Book Management System: The Stark Codex 📚 ⭐ 💹
+# Book Management System: The Stark Codex 📚 ⭐
+![Work in Progress](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGp4eW9zbWdzNGdwcGNuYW4ybWszNnBodDVpNmt5bHNsZ2MzdWp3MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCVBZCxLNXvakHj1cN/giphy.gif)
+
 ### 👷‍♂️ WORK IN PROGRESS PROJECT  👩‍🏭
   Dictated by seniorIntern , the Tony Stark of Code, to my trusty Future me. (stand-in for JARVIS). Buckle up, this isn't your gradma's library system.
   - **If you're reading this, you're either a collaborator or a future me checking my own genius. Either way, expect updates faster than you can say "Avengers, assemble!"**
